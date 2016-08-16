@@ -1,0 +1,238 @@
+Berg;Terrengformer;1
+Fjell;Terrengformer;2
+Fjellside;Terrengformer;239
+Fjellområde;Terrengformer;3
+Skogområde;Terrengformer;246
+Landskapsområde;Terrengformer;247
+Hei;Terrengformer;4
+Høyde;Terrengformer;5
+Ås;Terrengformer;6
+Rygg;Terrengformer;7
+Haug;Terrengformer;8
+Topp (fjelltopp/tind);Terrengformer;211
+Hylle (hjell);Terrengformer;212
+Fjellkant (aksel);Terrengformer;245
+Bakke;Terrengformer;9
+Li;Terrengformer;10
+Stup;Terrengformer;11
+Vidde;Terrengformer;12
+Slette;Terrengformer;13
+Mo;Terrengformer;14
+Dalføre;Terrengformer;15
+Dal;Terrengformer;16
+Botn;Terrengformer;17
+Senkning;Terrengformer;244
+Skar;Terrengformer;18
+Juv;Terrengformer;19
+Søkk;Terrengformer;20
+Stein;Terrengformer;21
+Grotte;Terrengformer;260
+Heller;Terrengformer;22
+Terrengdetalj;Terrengformer;213
+Innsjø;Vannkontur;30
+Del av innsjø;Vannkontur;257
+Gruppe av vann;Vannkontur;261
+Vann;Vannkontur;31
+Gruppe av tjern;Vannkontur;262
+Tjern;Vannkontur;32
+Pytt;Vannkontur;33
+Sund;Vannkontur;34
+Vik;Vannkontur;35
+Elv;Vannkontur;36
+Bekk;Vannkontur;37
+Grøft;Vannkontur;38
+Foss;Vannkontur;39
+Stryk;Vannkontur;40
+Os;Vannkontur;41
+Høl;Vannkontur;42
+Lone;Vannkontur;43
+Kilde;Vannkontur;243
+Øy;Vannkontur;44
+Øygruppe;Vannkontur;214
+Holme;Vannkontur;45
+Halvøy;Vannkontur;46
+Nes;Vannkontur;47
+Nes ved elver;Vannkontur;242
+Eid;Vannkontur;48
+Strand;Vannkontur;49
+Isbre;Vannkontur;50
+Fonn;Vannkontur;51
+Skjær;Vannkontur;52
+Båe;Vannkontur;53
+Grunne;Vannkontur;54
+Banke;Vannkontur;55
+Vanndetalj;Vannkontur;56
+Elvemel;Markslag;238
+Skog;Markslag;60
+Myr;Markslag;61
+Utmark;Markslag;62
+Sva;Markslag;63
+Ur;Markslag;64
+Skred;Markslag;263
+Øyr;Markslag;65
+Sand;Markslag;66
+Eng;Markslag;67
+Jorde;Markslag;68
+Havnehage;Markslag;69
+Torvtak;Markslag;70
+Setervoll;Markslag;71
+Park;Markslag;72
+Fyllplass;Markslag;264
+Grustak/Steinbrudd;Markslag;226
+Tømmervelte;Markslag;227
+Fjord;Kystdata;80
+Fjordmunning;Kystdata;241
+Havområde;Kystdata;81
+Sjøstykke;Kystdata;255
+Sund i sjø;Kystdata;82
+Vik i sjø;Kystdata;83
+Våg;Kystdata;215
+Øy i sjø;Kystdata;84
+Øygruppe i sjø;Kystdata;216
+Holme i sjø;Kystdata;85
+Holmegruppe i sjø;Kystdata;265
+Halvøy i sjø;Kystdata;86
+Nes i sjø;Kystdata;87
+Eid i sjø;Kystdata;88
+Strand i sjø;Kystdata;89
+Skjær i sjø;Kystdata;90
+Båe i sjø;Kystdata;91
+Grunne i sjø;Kystdata;92
+Renne;Kystdata;93
+Banke i sjø;Kystdata;94
+Bakke i sjø;Kystdata;95
+Søkk i sjø;Kystdata;96
+Dyp (havdyp);Kystdata;97
+Rygg i sjø;Kystdata;98
+Egg;Kystdata;99
+Klakk;Kystdata;217
+Fiskeplass;Kystdata;256
+By;Bebyggelse/eiendom;100
+Bydel;Bebyggelse/eiendom;132
+Tettsted;Bebyggelse/eiendom;101
+Tettsteddel;Bebyggelse/eiendom;266
+Tettbebyggelse;Bebyggelse/eiendom;102
+Bygdelag (bygd);Bebyggelse/eiendom;103
+Grend;Bebyggelse/eiendom;104
+Boligfelt;Bebyggelse/eiendom;105
+Hyttefelt;Bebyggelse/eiendom;228
+Borettslag;Bebyggelse/eiendom;106
+Industriområde;Bebyggelse/eiendom;107
+Gard;Bebyggelse/eiendom;280
+Bruk (gardsbruk);Bebyggelse/eiendom;108
+Enebolig/mindre boligbygg (villa);Bebyggelse/eiendom;109
+Boligblokk;Bebyggelse/eiendom;259
+Fritidsbolig (hytte,sommerhus);Bebyggelse/eiendom;110
+Seter (sel, støl);Bebyggelse/eiendom;111
+Bygg for jordbruk, fiske og fangst;Bebyggelse/eiendom;112
+Fabrikk;Bebyggelse/eiendom;113
+Kraftstasjon;Bebyggelse/eiendom;114
+Bergverk (underjord./dagbrudd);Bebyggelse/eiendom;218
+Verksted;Bebyggelse/eiendom;115
+Forretningsbygg;Bebyggelse/eiendom;116
+Hotell;Bebyggelse/eiendom;117
+Pensjonat;Bebyggelse/eiendom;118
+Turisthytte;Bebyggelse/eiendom;119
+Serveringssted;Bebyggelse/eiendom;267
+Campingplass;Bebyggelse/eiendom;191
+Skole;Bebyggelse/eiendom;120
+Universitet/høgskole;Bebyggelse/eiendom;248
+Sykehus;Bebyggelse/eiendom;121
+Helseinstitusjon;Bebyggelse/eiendom;122
+Kirke;Bebyggelse/eiendom;123
+Annen bygning for religiøse aktiviteter.;Bebyggelse/eiendom;249
+Forsamlingshus/Kulturhus;Bebyggelse/eiendom;125
+Vaktstasjon/Beredsskapsbygning;Bebyggelse/eiendom;126
+Militært bygg/Anlegg;Bebyggelse/eiendom;127
+Idrettshall;Bebyggelse/eiendom;128
+Fyr(Fyrstasjon);Bebyggelse/eiendom;129
+Lykt (Fyrlykt);Bebyggelse/eiendom;130
+TV/Radio-mast;Bebyggelse/eiendom;131
+Barnehage;Bebyggelse/eiendom;229
+Poststed (Postkontor);Bebyggelse/eiendom;230
+Adressenavn;Bebyggelse/eiendom;231
+Rådhus (komm, fylke, stat);Bebyggelse/eiendom;237
+Fengsel;Bebyggelse/eiendom;250
+Museum/ Galleri/Bibliotek;Bebyggelse/eiendom;251
+Garasje/hangarbygg;Bebyggelse/eiendom;252
+Gammel bosettingsplass;Bebyggelse/eiendom;206
+Historisk bosetting;Bebyggelse/eiendom;310
+Veg (Gate);Samferdsel;140
+Traktorveg;Samferdsel;142
+Sti;Samferdsel;143
+Farled/Skipslei;Samferdsel;144
+Ferjestrekning;Samferdsel;145
+Jernbanestrekning;Samferdsel;219
+Vegstrekning;Samferdsel;240
+Bru;Samferdsel;146
+Klopp;Samferdsel;147
+Vad;Samferdsel;220
+Tunnel;Samferdsel;148
+Kryss (Veg/Gate);Samferdsel;149
+Vegbom;Samferdsel;150
+Bomstasjon;Samferdsel;151
+Grind;Samferdsel;152
+Parkeringsplass;Samferdsel;153
+Kai;Samferdsel;154
+Brygge;Samferdsel;155
+Ferjekai;Samferdsel;156
+Utstikker;Samferdsel;157
+Molo;Samferdsel;236
+Sluse;Samferdsel;158
+Kanal;Samferdsel;159
+Ankringsplass;Samferdsel;160
+Havn;Samferdsel;221
+Stasjon;Samferdsel;161
+Holdeplass;Samferdsel;162
+Rasteplass;Samferdsel;278
+Busstopp;Samferdsel;163
+Flyplass;Samferdsel;164
+Landingsstripe;Samferdsel;165
+Plass/torg;Samferdsel;232
+Nasjon;Administrative områder;180
+Fylke;Administrative områder;181
+Kommune;Administrative områder;182
+Adm. by;Administrative områder;268
+Adm. bydel;Administrative områder;269
+Adm. tettsted;Administrative områder;270
+Sogn;Administrative områder;183
+Grunnkrets;Administrative områder;184
+Allmenning;Administrative områder;185
+Skytefelt;Administrative områder;186
+Verneområder;Administrative områder;187
+Soneinndeling til havs;Administrative områder;188
+Annen adm. Inndeling;Administrative områder;253
+Grensemerke;Administrative områder;258
+Idrettsanlegg;Andre navnetyper;190
+Skytebane;Andre navnetyper;210
+Gravplass;Andre navnetyper;235
+Skiheis;Andre navnetyper;192
+Fjellheis;Andre navnetyper;193
+Slalåm- og utforbakke;Andre navnetyper;194
+Småbåthavn;Andre navnetyper;195
+Badeplass;Andre navnetyper;222
+Fornøyelsespark;Andre navnetyper;223
+Rørledning;Andre navnetyper;196
+Oljeinstallasjon (Sjø);Andre navnetyper;197
+Kraftledning;Andre navnetyper;198
+Kraftgate (Rørgate);Andre navnetyper;199
+Kabel;Andre navnetyper;200
+Dam;Andre navnetyper;201
+Tømmerrenne;Andre navnetyper;202
+Taubane;Andre navnetyper;203
+Fløtningsannlegg;Andre navnetyper;204
+Fiskeoppdrettsanlegg;Andre navnetyper;205
+Offersted;Andre navnetyper;207
+Severdighet;Andre navnetyper;208
+Utsiktspunkt;Andre navnetyper;209
+Melkeplass;Andre navnetyper;224
+Annen kulturdetalj;Andre navnetyper;225
+Gjerde;Andre navnetyper;233
+Stø;Andre navnetyper;234
+Varde;Andre navnetyper;254
+Lanterne;Andre navnetyper;272
+Stang;Andre navnetyper;273
+Stake;Andre navnetyper;274
+Lysbøye;Andre navnetyper;275
+Båke;Andre navnetyper;276
+Overett;Andre navnetyper;277

@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A3C3F1CD93BB311A270ACB /* Pods_HikeTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C84B686BCF558BFB93A784 /* Pods_HikeTrackerTests.framework */; };
+		649F8D6BC47DD7FF9FB71BBF /* Pods_HikeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC904B65A7D2D9BBB8DDF24D /* Pods_HikeTracker.framework */; };
+		A72635831D5C69920028C5AD /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72635821D5C69920028C5AD /* Location.swift */; };
+		A75A172C1D5DB00A0088E08D /* stedsnavn_pretty.geojson in Resources */ = {isa = PBXBuildFile; fileRef = A75A172B1D5DB00A0088E08D /* stedsnavn_pretty.geojson */; };
+		A75A172E1D5DB4AE0088E08D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = A75A172A1D5DAF8C0088E08D /* default.realm */; };
+		A75A17431D61A9370088E08D /* LoggedTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A17421D61A9370088E08D /* LoggedTrip.swift */; };
+		A75A17471D61AA450088E08D /* TripDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A17461D61AA450088E08D /* TripDatabaseService.swift */; };
+		A75A17491D61AB260088E08D /* TripSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A17481D61AB260088E08D /* TripSearchResult.swift */; };
+		A75A174B1D61C5F90088E08D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A174A1D61C5F90088E08D /* Trip.swift */; };
+		A7DE03331D213C400016DA1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03321D213C400016DA1B /* AppDelegate.swift */; };
+		A7DE03351D213C400016DA1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03341D213C400016DA1B /* ViewController.swift */; };
+		A7DE03381D213C400016DA1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DE03361D213C400016DA1B /* Main.storyboard */; };
+		A7DE033A1D213C400016DA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DE03391D213C400016DA1B /* Assets.xcassets */; };
+		A7DE033D1D213C400016DA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DE033B1D213C400016DA1B /* LaunchScreen.storyboard */; };
+		A7DE03481D213C400016DA1B /* HikeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03471D213C400016DA1B /* HikeTrackerTests.swift */; };
+		A7DE03531D213C400016DA1B /* HikeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03521D213C400016DA1B /* HikeTrackerUITests.swift */; };
+		A7DE03581D213C400016DA1B /* HikeTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A7DE03571D213C400016DA1B /* HikeTracker WatchKit App.app */; };
+		A7DE035E1D213C400016DA1B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7DE035C1D213C400016DA1B /* Interface.storyboard */; };
+		A7DE03601D213C400016DA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DE035F1D213C400016DA1B /* Assets.xcassets */; };
+		A7DE03671D213C400016DA1B /* HikeTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7DE03661D213C400016DA1B /* HikeTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7DE036E1D213C400016DA1B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE036D1D213C400016DA1B /* InterfaceController.swift */; };
+		A7DE03701D213C400016DA1B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE036F1D213C400016DA1B /* ExtensionDelegate.swift */; };
+		A7DE03721D213C400016DA1B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03711D213C400016DA1B /* NotificationController.swift */; };
+		A7DE03741D213C400016DA1B /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03731D213C400016DA1B /* GlanceController.swift */; };
+		A7DE03761D213C400016DA1B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DE03751D213C400016DA1B /* ComplicationController.swift */; };
+		A7DE03781D213C400016DA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DE03771D213C400016DA1B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7DE03441D213C400016DA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7DE03271D213C400016DA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7DE032E1D213C400016DA1B;
+			remoteInfo = HikeTracker;
+		};
+		A7DE034F1D213C400016DA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7DE03271D213C400016DA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7DE032E1D213C400016DA1B;
+			remoteInfo = HikeTracker;
+		};
+		A7DE03591D213C400016DA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7DE03271D213C400016DA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7DE03561D213C400016DA1B;
+			remoteInfo = "HikeTracker WatchKit App";
+		};
+		A7DE03681D213C400016DA1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7DE03271D213C400016DA1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7DE03651D213C400016DA1B;
+			remoteInfo = "HikeTracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7DE037F1D213C400016DA1B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7DE03671D213C400016DA1B /* HikeTracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03831D213C400016DA1B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A7DE03581D213C400016DA1B /* HikeTracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14409F917737257231487829 /* Pods-HikeTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikeTrackerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HikeTrackerTests/Pods-HikeTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7ACABDAC3C95BF1D453E89FE /* Pods-HikeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikeTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HikeTracker/Pods-HikeTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		9E7D299EB3CCF953EDFDBA1D /* Pods-HikeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikeTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-HikeTracker/Pods-HikeTracker.release.xcconfig"; sourceTree = "<group>"; };
+		A72635821D5C69920028C5AD /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A75A172A1D5DAF8C0088E08D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		A75A172B1D5DB00A0088E08D /* stedsnavn_pretty.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stedsnavn_pretty.geojson; sourceTree = "<group>"; };
+		A75A17421D61A9370088E08D /* LoggedTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggedTrip.swift; sourceTree = "<group>"; };
+		A75A17461D61AA450088E08D /* TripDatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDatabaseService.swift; sourceTree = "<group>"; };
+		A75A17481D61AB260088E08D /* TripSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripSearchResult.swift; sourceTree = "<group>"; };
+		A75A174A1D61C5F90088E08D /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		A781E3E21D5C90B1008A61D3 /* kommuner.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kommuner.csv; sourceTree = "<group>"; };
+		A781E3E61D5CA30A008A61D3 /* placename_types.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placename_types.csv; sourceTree = "<group>"; };
+		A7DE032F1D213C400016DA1B /* HikeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DE03321D213C400016DA1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7DE03341D213C400016DA1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7DE03371D213C400016DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7DE03391D213C400016DA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7DE033C1D213C400016DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7DE033E1D213C400016DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DE03431D213C400016DA1B /* HikeTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DE03471D213C400016DA1B /* HikeTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeTrackerTests.swift; sourceTree = "<group>"; };
+		A7DE03491D213C400016DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DE034E1D213C400016DA1B /* HikeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DE03521D213C400016DA1B /* HikeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeTrackerUITests.swift; sourceTree = "<group>"; };
+		A7DE03541D213C400016DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DE03571D213C400016DA1B /* HikeTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HikeTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DE035D1D213C400016DA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A7DE035F1D213C400016DA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7DE03611D213C400016DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7DE03661D213C400016DA1B /* HikeTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HikeTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DE036C1D213C400016DA1B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A7DE036D1D213C400016DA1B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A7DE036F1D213C400016DA1B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A7DE03711D213C400016DA1B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A7DE03731D213C400016DA1B /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A7DE03751D213C400016DA1B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A7DE03771D213C400016DA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7DE03791D213C400016DA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC904B65A7D2D9BBB8DDF24D /* Pods_HikeTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikeTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C99324F3AF2889F29E5F13F9 /* Pods-HikeTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HikeTrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HikeTrackerTests/Pods-HikeTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C84B686BCF558BFB93A784 /* Pods_HikeTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HikeTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7DE032C1D213C400016DA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649F8D6BC47DD7FF9FB71BBF /* Pods_HikeTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03401D213C400016DA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A3C3F1CD93BB311A270ACB /* Pods_HikeTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE034B1D213C400016DA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03631D213C400016DA1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF9A55DA944DC8E324287878 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		961428DD82ED49166271194B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC904B65A7D2D9BBB8DDF24D /* Pods_HikeTracker.framework */,
+				F6C84B686BCF558BFB93A784 /* Pods_HikeTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72635811D5C69500028C5AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A72635821D5C69920028C5AD /* Location.swift */,
+				A75A17421D61A9370088E08D /* LoggedTrip.swift */,
+				A75A17481D61AB260088E08D /* TripSearchResult.swift */,
+				A75A174A1D61C5F90088E08D /* Trip.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A75A17441D61AA0E0088E08D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE03341D213C400016DA1B /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A75A17451D61AA170088E08D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A75A17461D61AA450088E08D /* TripDatabaseService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A781E3E11D5C8F68008A61D3 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A781E3E21D5C90B1008A61D3 /* kommuner.csv */,
+				A781E3E61D5CA30A008A61D3 /* placename_types.csv */,
+				A75A172A1D5DAF8C0088E08D /* default.realm */,
+				A75A172B1D5DB00A0088E08D /* stedsnavn_pretty.geojson */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		A7DE03261D213C400016DA1B = {
+			isa = PBXGroup;
+			children = (
+				A7DE03311D213C400016DA1B /* HikeTracker */,
+				A7DE03461D213C400016DA1B /* HikeTrackerTests */,
+				A7DE03511D213C400016DA1B /* HikeTrackerUITests */,
+				A7DE035B1D213C400016DA1B /* HikeTracker WatchKit App */,
+				A7DE036A1D213C400016DA1B /* HikeTracker WatchKit Extension */,
+				A7DE03301D213C400016DA1B /* Products */,
+				B402DDAB38B521428E399E4A /* Pods */,
+				961428DD82ED49166271194B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7DE03301D213C400016DA1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE032F1D213C400016DA1B /* HikeTracker.app */,
+				A7DE03431D213C400016DA1B /* HikeTrackerTests.xctest */,
+				A7DE034E1D213C400016DA1B /* HikeTrackerUITests.xctest */,
+				A7DE03571D213C400016DA1B /* HikeTracker WatchKit App.app */,
+				A7DE03661D213C400016DA1B /* HikeTracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7DE03311D213C400016DA1B /* HikeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A75A17451D61AA170088E08D /* Services */,
+				A781E3E11D5C8F68008A61D3 /* Supporting files */,
+				A72635811D5C69500028C5AD /* Models */,
+				A7DE03321D213C400016DA1B /* AppDelegate.swift */,
+				A75A17441D61AA0E0088E08D /* ViewControllers */,
+				A7DE03361D213C400016DA1B /* Main.storyboard */,
+				A7DE03391D213C400016DA1B /* Assets.xcassets */,
+				A7DE033B1D213C400016DA1B /* LaunchScreen.storyboard */,
+				A7DE033E1D213C400016DA1B /* Info.plist */,
+			);
+			path = HikeTracker;
+			sourceTree = "<group>";
+		};
+		A7DE03461D213C400016DA1B /* HikeTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE03471D213C400016DA1B /* HikeTrackerTests.swift */,
+				A7DE03491D213C400016DA1B /* Info.plist */,
+			);
+			path = HikeTrackerTests;
+			sourceTree = "<group>";
+		};
+		A7DE03511D213C400016DA1B /* HikeTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE03521D213C400016DA1B /* HikeTrackerUITests.swift */,
+				A7DE03541D213C400016DA1B /* Info.plist */,
+			);
+			path = HikeTrackerUITests;
+			sourceTree = "<group>";
+		};
+		A7DE035B1D213C400016DA1B /* HikeTracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE035C1D213C400016DA1B /* Interface.storyboard */,
+				A7DE035F1D213C400016DA1B /* Assets.xcassets */,
+				A7DE03611D213C400016DA1B /* Info.plist */,
+			);
+			path = "HikeTracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		A7DE036A1D213C400016DA1B /* HikeTracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE036D1D213C400016DA1B /* InterfaceController.swift */,
+				A7DE036F1D213C400016DA1B /* ExtensionDelegate.swift */,
+				A7DE03711D213C400016DA1B /* NotificationController.swift */,
+				A7DE03731D213C400016DA1B /* GlanceController.swift */,
+				A7DE03751D213C400016DA1B /* ComplicationController.swift */,
+				A7DE03771D213C400016DA1B /* Assets.xcassets */,
+				A7DE03791D213C400016DA1B /* Info.plist */,
+				A7DE036B1D213C400016DA1B /* Supporting Files */,
+			);
+			path = "HikeTracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A7DE036B1D213C400016DA1B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7DE036C1D213C400016DA1B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B402DDAB38B521428E399E4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ACABDAC3C95BF1D453E89FE /* Pods-HikeTracker.debug.xcconfig */,
+				9E7D299EB3CCF953EDFDBA1D /* Pods-HikeTracker.release.xcconfig */,
+				C99324F3AF2889F29E5F13F9 /* Pods-HikeTrackerTests.debug.xcconfig */,
+				14409F917737257231487829 /* Pods-HikeTrackerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7DE032E1D213C400016DA1B /* HikeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DE03841D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker" */;
+			buildPhases = (
+				84E3DC6C5345257EC7F8F7CD /* [CP] Check Pods Manifest.lock */,
+				A7DE032B1D213C400016DA1B /* Sources */,
+				A7DE032C1D213C400016DA1B /* Frameworks */,
+				A7DE032D1D213C400016DA1B /* Resources */,
+				A7DE03831D213C400016DA1B /* Embed Watch Content */,
+				4D1EA7730EEF2BDCB7E23168 /* [CP] Embed Pods Frameworks */,
+				6CC82F5A369F5853A3A9D35B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7DE035A1D213C400016DA1B /* PBXTargetDependency */,
+			);
+			name = HikeTracker;
+			productName = HikeTracker;
+			productReference = A7DE032F1D213C400016DA1B /* HikeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7DE03421D213C400016DA1B /* HikeTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DE03871D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTrackerTests" */;
+			buildPhases = (
+				F8C5D95385CC64BB2517321B /* [CP] Check Pods Manifest.lock */,
+				A7DE033F1D213C400016DA1B /* Sources */,
+				A7DE03401D213C400016DA1B /* Frameworks */,
+				A7DE03411D213C400016DA1B /* Resources */,
+				8790A809171FAEB540D6C07D /* [CP] Embed Pods Frameworks */,
+				0548F54972728FA64C666292 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7DE03451D213C400016DA1B /* PBXTargetDependency */,
+			);
+			name = HikeTrackerTests;
+			productName = HikeTrackerTests;
+			productReference = A7DE03431D213C400016DA1B /* HikeTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7DE034D1D213C400016DA1B /* HikeTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DE038A1D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTrackerUITests" */;
+			buildPhases = (
+				A7DE034A1D213C400016DA1B /* Sources */,
+				A7DE034B1D213C400016DA1B /* Frameworks */,
+				A7DE034C1D213C400016DA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7DE03501D213C400016DA1B /* PBXTargetDependency */,
+			);
+			name = HikeTrackerUITests;
+			productName = HikeTrackerUITests;
+			productReference = A7DE034E1D213C400016DA1B /* HikeTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A7DE03561D213C400016DA1B /* HikeTracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DE03801D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker WatchKit App" */;
+			buildPhases = (
+				A7DE03551D213C400016DA1B /* Resources */,
+				A7DE037F1D213C400016DA1B /* Embed App Extensions */,
+				CF9A55DA944DC8E324287878 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7DE03691D213C400016DA1B /* PBXTargetDependency */,
+			);
+			name = "HikeTracker WatchKit App";
+			productName = "HikeTracker WatchKit App";
+			productReference = A7DE03571D213C400016DA1B /* HikeTracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A7DE03651D213C400016DA1B /* HikeTracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DE037C1D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker WatchKit Extension" */;
+			buildPhases = (
+				A7DE03621D213C400016DA1B /* Sources */,
+				A7DE03631D213C400016DA1B /* Frameworks */,
+				A7DE03641D213C400016DA1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HikeTracker WatchKit Extension";
+			productName = "HikeTracker WatchKit Extension";
+			productReference = A7DE03661D213C400016DA1B /* HikeTracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7DE03271D213C400016DA1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Lidal;
+				TargetAttributes = {
+					A7DE032E1D213C400016DA1B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A7DE03421D213C400016DA1B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7DE032E1D213C400016DA1B;
+					};
+					A7DE034D1D213C400016DA1B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7DE032E1D213C400016DA1B;
+					};
+					A7DE03561D213C400016DA1B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A7DE03651D213C400016DA1B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A7DE032A1D213C400016DA1B /* Build configuration list for PBXProject "HikeTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7DE03261D213C400016DA1B;
+			productRefGroup = A7DE03301D213C400016DA1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7DE032E1D213C400016DA1B /* HikeTracker */,
+				A7DE03421D213C400016DA1B /* HikeTrackerTests */,
+				A7DE034D1D213C400016DA1B /* HikeTrackerUITests */,
+				A7DE03561D213C400016DA1B /* HikeTracker WatchKit App */,
+				A7DE03651D213C400016DA1B /* HikeTracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7DE032D1D213C400016DA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75A172E1D5DB4AE0088E08D /* default.realm in Resources */,
+				A75A172C1D5DB00A0088E08D /* stedsnavn_pretty.geojson in Resources */,
+				A7DE033D1D213C400016DA1B /* LaunchScreen.storyboard in Resources */,
+				A7DE033A1D213C400016DA1B /* Assets.xcassets in Resources */,
+				A7DE03381D213C400016DA1B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03411D213C400016DA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE034C1D213C400016DA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03551D213C400016DA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DE03601D213C400016DA1B /* Assets.xcassets in Resources */,
+				A7DE035E1D213C400016DA1B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03641D213C400016DA1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DE03781D213C400016DA1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0548F54972728FA64C666292 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HikeTrackerTests/Pods-HikeTrackerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1EA7730EEF2BDCB7E23168 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HikeTracker/Pods-HikeTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC82F5A369F5853A3A9D35B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HikeTracker/Pods-HikeTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E3DC6C5345257EC7F8F7CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8790A809171FAEB540D6C07D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HikeTrackerTests/Pods-HikeTrackerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C5D95385CC64BB2517321B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7DE032B1D213C400016DA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75A17491D61AB260088E08D /* TripSearchResult.swift in Sources */,
+				A75A17431D61A9370088E08D /* LoggedTrip.swift in Sources */,
+				A7DE03351D213C400016DA1B /* ViewController.swift in Sources */,
+				A72635831D5C69920028C5AD /* Location.swift in Sources */,
+				A75A17471D61AA450088E08D /* TripDatabaseService.swift in Sources */,
+				A75A174B1D61C5F90088E08D /* Trip.swift in Sources */,
+				A7DE03331D213C400016DA1B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE033F1D213C400016DA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DE03481D213C400016DA1B /* HikeTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE034A1D213C400016DA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DE03531D213C400016DA1B /* HikeTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7DE03621D213C400016DA1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DE03721D213C400016DA1B /* NotificationController.swift in Sources */,
+				A7DE03701D213C400016DA1B /* ExtensionDelegate.swift in Sources */,
+				A7DE03761D213C400016DA1B /* ComplicationController.swift in Sources */,
+				A7DE036E1D213C400016DA1B /* InterfaceController.swift in Sources */,
+				A7DE03741D213C400016DA1B /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7DE03451D213C400016DA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7DE032E1D213C400016DA1B /* HikeTracker */;
+			targetProxy = A7DE03441D213C400016DA1B /* PBXContainerItemProxy */;
+		};
+		A7DE03501D213C400016DA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7DE032E1D213C400016DA1B /* HikeTracker */;
+			targetProxy = A7DE034F1D213C400016DA1B /* PBXContainerItemProxy */;
+		};
+		A7DE035A1D213C400016DA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7DE03561D213C400016DA1B /* HikeTracker WatchKit App */;
+			targetProxy = A7DE03591D213C400016DA1B /* PBXContainerItemProxy */;
+		};
+		A7DE03691D213C400016DA1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7DE03651D213C400016DA1B /* HikeTracker WatchKit Extension */;
+			targetProxy = A7DE03681D213C400016DA1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7DE03361D213C400016DA1B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DE03371D213C400016DA1B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7DE033B1D213C400016DA1B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DE033C1D213C400016DA1B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A7DE035C1D213C400016DA1B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DE035D1D213C400016DA1B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7DE037A1D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7DE037B1D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7DE037D1D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HikeTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A7DE037E1D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "HikeTracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A7DE03811D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HikeTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "HikeTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A7DE03821D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = HikeTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "HikeTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A7DE03851D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACABDAC3C95BF1D453E89FE /* Pods-HikeTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7DE03861D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E7D299EB3CCF953EDFDBA1D /* Pods-HikeTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HikeTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A7DE03881D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99324F3AF2889F29E5F13F9 /* Pods-HikeTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikeTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikeTracker.app/HikeTracker";
+			};
+			name = Debug;
+		};
+		A7DE03891D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14409F917737257231487829 /* Pods-HikeTrackerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HikeTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HikeTracker.app/HikeTracker";
+			};
+			name = Release;
+		};
+		A7DE038B1D213C400016DA1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikeTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikeTracker;
+			};
+			name = Debug;
+		};
+		A7DE038C1D213C400016DA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HikeTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.lidal.HikeTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HikeTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7DE032A1D213C400016DA1B /* Build configuration list for PBXProject "HikeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE037A1D213C400016DA1B /* Debug */,
+				A7DE037B1D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DE037C1D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE037D1D213C400016DA1B /* Debug */,
+				A7DE037E1D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DE03801D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE03811D213C400016DA1B /* Debug */,
+				A7DE03821D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DE03841D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE03851D213C400016DA1B /* Debug */,
+				A7DE03861D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DE03871D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE03881D213C400016DA1B /* Debug */,
+				A7DE03891D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DE038A1D213C400016DA1B /* Build configuration list for PBXNativeTarget "HikeTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE038B1D213C400016DA1B /* Debug */,
+				A7DE038C1D213C400016DA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7DE03271D213C400016DA1B /* Project object */;
+}

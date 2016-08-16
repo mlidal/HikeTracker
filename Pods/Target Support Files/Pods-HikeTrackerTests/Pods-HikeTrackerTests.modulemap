@@ -1,0 +1,6 @@
+framework module Pods_HikeTrackerTests {
+  umbrella header "Pods-HikeTrackerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
